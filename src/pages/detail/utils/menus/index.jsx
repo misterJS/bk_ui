@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 
 function MenusDetailComponentMemo({ addToCart }) {
   const [detail, setDetail] = useState(false);
+  const [item, setItem] = useState(1);
   const { categoryName } = useParams();
 
   const filteredVariant = menus.filter((menu) => menu.code === categoryName)[0]
@@ -49,25 +50,32 @@ function MenusDetailComponentMemo({ addToCart }) {
             <div className="relative flex w-full max-w-[24rem] mb-7 mt-6">
               <Button
                 size="sm"
+                onClick={() => setItem(item - 1)}
                 className="!absolute left-1 primary-orange-font bg-transparent top-1 rounded"
               >
                 -
               </Button>
               <Input
                 type="number"
+                value={item}
                 className="text-center"
                 containerProps={{
                   className: "min-w-0",
                 }}
               />
               <Button
+                onClick={() => setItem(item + 1)}
                 size="sm"
                 className="!absolute right-1 primary-orange-font bg-transparent top-1 rounded"
               >
                 +
               </Button>
             </div>
-            <Button onClick={addToCart} size="md" className="primary-button rounded w-full">
+            <Button
+              onClick={addToCart}
+              size="md"
+              className="primary-button rounded w-full"
+            >
               Add To Cart
             </Button>
           </div>
