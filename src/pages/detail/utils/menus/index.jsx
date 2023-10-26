@@ -4,7 +4,7 @@ import menus from "../../../../mock/menu.json";
 import { Button, Card, Input } from "@material-tailwind/react";
 import { useParams } from "react-router-dom";
 
-function MenusDetailComponentMemo() {
+function MenusDetailComponentMemo({ addToCart }) {
   const [detail, setDetail] = useState(false);
   const { categoryName } = useParams();
 
@@ -26,10 +26,10 @@ function MenusDetailComponentMemo() {
           ))}
         </div>
       ) : (
-        <Card className="grid grid-flow-row sm:grid-flow-col col-span-1 divide-x">
+        <Card className="grid grid-flow-row sm:grid-flow-col divide-x">
           <div className="p-5 text-center">
             <h1 className="text-3xl mb-4">Paket Crispy</h1>
-            <p>
+            <p className="w-80">
               1 pc Ayam Crispy + Nasi + Frestea Jasmine Tea Medium [ Rasa Baru,
               Enaknya sampe gigitan terakhir ! ] 𝘗𝘰𝘵𝘰𝘯𝘨𝘢𝘯 𝘢𝘺𝘢𝘮 𝘺𝘢𝘯𝘨 𝘵𝘦𝘳𝘴𝘦𝘥𝘪𝘢
               𝘵𝘦𝘳𝘨𝘢𝘯𝘵𝘶𝘯𝘨 𝘬𝘦𝘵𝘦𝘳𝘴𝘦𝘥𝘪𝘢𝘢𝘯 𝘥𝘪 𝘵𝘰𝘬𝘰 𝘱𝘢𝘥𝘢 𝘴𝘢𝘢𝘵 𝘱𝘦𝘮𝘦𝘴𝘢𝘯𝘢𝘯/𝘱𝘦𝘯𝘨𝘪𝘳𝘪𝘮𝘢𝘯
@@ -67,7 +67,7 @@ function MenusDetailComponentMemo() {
                 +
               </Button>
             </div>
-            <Button size="md" className="primary-button rounded w-full">
+            <Button onClick={addToCart} size="md" className="primary-button rounded w-full">
               Add To Cart
             </Button>
           </div>
