@@ -1,15 +1,20 @@
 import { memo, useState } from "react";
 import { CardPriceComponent } from "../../../../components";
-import menus from "../../../../mock/menu-price.json";
+import menus from "../../../../mock/menu.json";
 import { Button, Card, Input } from "@material-tailwind/react";
+import { useParams } from "react-router-dom";
 
 function MenusDetailComponentMemo() {
   const [detail, setDetail] = useState(false);
+  const { categoryName } = useParams();
+
+  const filteredVariant = menus.filter((menu) => menu.code === categoryName)[0]
+    .variant;
   return (
     <div className="grid justify-center text-center">
       {!detail ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {menus.map((menu) => (
+          {filteredVariant?.map((menu) => (
             <div onClick={() => setDetail(true)}>
               <CardPriceComponent
                 imageUrl={menu.imageUrl}
