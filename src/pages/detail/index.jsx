@@ -6,7 +6,7 @@ function Detail() {
     <div>
       <Header />
 
-      <div className="grid grid-flow-col gap-4 justify-center py-8 sm:px-24 lg:px-45">
+      <div className="grid grid-flow-col gap-4 justify-center py-8 sm:px-24 md:px-80">
         <Sidebar />
         <MenusDetailComponent />
       </div>
