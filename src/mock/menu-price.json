@@ -1,0 +1,38 @@
+[
+  {
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1cf6c17274d492369e75b508f794d6ee/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
+    "imageAlt": "our menu 1",
+    "title": "Paket Spicy 1",
+    "price": "Rp. 34,000"
+  },
+  {
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1cf6c17274d492369e75b508f794d6ee/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
+    "imageAlt": "our menu 2",
+    "title": "Paket Spicy 2",
+    "price": "Rp. 36,000"
+  },
+  {
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1cf6c17274d492369e75b508f794d6ee/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
+    "imageAlt": "our menu 3",
+    "title": "Paket Spicy 3",
+    "price": "Rp. 38,000"
+  },
+  {
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1cf6c17274d492369e75b508f794d6ee/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
+    "imageAlt": "our menu 4",
+    "title": "Paket Spicy 4",
+    "price": "Rp. 40,000"
+  },
+  {
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1cf6c17274d492369e75b508f794d6ee/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
+    "imageAlt": "our menu 5",
+    "title": "Paket Spicy 5",
+    "price": "Rp. 42,000"
+  },
+  {
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1cf6c17274d492369e75b508f794d6ee/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
+    "imageAlt": "our menu 6",
+    "title": "Paket Spicy 6",
+    "price": "Rp. 55,000"
+  }
+]
