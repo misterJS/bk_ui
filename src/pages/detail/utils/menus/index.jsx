@@ -51,7 +51,8 @@ function MenusDetailComponentMemo({ addToCart }) {
               <Button
                 size="sm"
                 onClick={() => setItem(item - 1)}
-                className="!absolute left-1 primary-orange-font bg-transparent top-1 rounded"
+                disabled={item === 1}
+                className="!absolute left-1 primary-orange-font bg-transparent top-1 rounded z-10"
               >
                 -
               </Button>
